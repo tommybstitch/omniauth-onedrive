@@ -1,6 +1,11 @@
-# Omniauth::Onedrive
+# Omniauth Onedrive
 
-TODO: Write a gem description
+A OneDrive / Windows Live strategy for OmniAuth. Created according the OneDrive documentation. A Windows Live app needs to be created in the Developer Center - https://dev.onedrive.com/app-registration.htm.
+
+More information about the OAuth authentication method can be found here:
+https://dev.onedrive.com/auth/msa_oauth.htm
+
+This gem is slighty based on the version of Plexinc (https://github.com/plexinc/omniauth-live-connect), but I found out after I completed and implemented the gem.
 
 ## Installation
 
@@ -20,7 +25,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    # Add to OmniAuth::Builder do
+    provider :onedrive, ENV['live_client_id'], ENV['live_secret_key'], 
+      { :scope => 'wl.signin wl.basic' }
 
 ## Contributing
 

@@ -1,2 +1,2 @@
-require "omniauth/onedrive/version"
-require "omniauth/strategies/onedrive"
+require 'omniauth/onedrive/version'
+require 'omniauth/strategies/onedrive'

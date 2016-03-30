@@ -1,1 +1,1 @@
-require "omniauth/onedrive"
+require 'omniauth/onedrive'
