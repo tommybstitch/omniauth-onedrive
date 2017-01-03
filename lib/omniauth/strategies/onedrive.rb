@@ -33,6 +33,8 @@ module OmniAuth
       end
 
       def callback_url
+        Rails.logger.info "*************"
+        Rails.logger.info options.to_json
         options[:redirect_uri] || (full_host + script_name + callback_path)
       end
     end
